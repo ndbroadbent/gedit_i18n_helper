@@ -8,7 +8,7 @@ Highlight an untranslated string, and use the 'Tools -> I18n-ize' menu item
 or Ctrl+Shift+I keyboard shortcut.
 
 * Takes the selected string, generates a i18n key.
-* Replaces the selection with [ = t('.<< key >>') ]
+* Replaces the selection with:  = t('.<< key >>') 
 * Copies the locale definition into your clipboard, to paste into your en.yml file.
 ** key: Original String
 
