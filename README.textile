@@ -1,6 +1,6 @@
-h1. I18n Helper for Rails
+h1. Gedit plugin - I18n Helper for Rails
 
-Gedit plugin to help with internationalizing Rails views.
+h4. Menu and keyboard shortcut for internationalizing strings in Rails templates.
 
 h3. Usage
 
