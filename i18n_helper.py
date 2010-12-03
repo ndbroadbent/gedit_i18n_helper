@@ -84,9 +84,16 @@ class I18nWindowHelper:
         
         string = start.get_slice(end)
         i18n_key = re.sub(r'[\W]+', '', string.lower().strip().replace(' ', '_'))
+        i18n_string = re.sub(r'[\'"]+', '', string.strip())
         
-        locale_config = '{0}: {1}'.format(i18n_key, string.strip())
-        view_string = '= t(".{0}")'.format(i18n_key)
+        locale_config = '{0}: {1}'.format(i18n_key, i18n_string)
+            
+        # If string is quoted, string is already being evaluated.
+        # If not quoted, string needs the '=' evaluation added.
+        if string.startswith("'") or string.startswith('"'):
+            view_string = 't(".{0}")'.format(i18n_key)
+        else:
+            view_string = '= t(".{0}")'.format(i18n_key)
                
         doc.delete(start, end)
         doc.insert(start, view_string)
