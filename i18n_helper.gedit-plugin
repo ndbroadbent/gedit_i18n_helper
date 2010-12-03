@@ -1,0 +1,9 @@
+[Gedit Plugin]
+Loader=python
+Module=i18n_helper
+IAge=2
+Name=I18n Helper (Rails)
+Description=Shortcut for 'i18n'izing selected strings.
+Authors=Nathan B <http://www.f-77.com/contact>
+Copyright=Copyright © 2010 Nathan Broadbent <http://www.f-77.com/contact>
+Website=http://www.f-77.com

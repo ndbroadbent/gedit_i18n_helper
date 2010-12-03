@@ -1,0 +1,20 @@
+h1. I18n Helper for Rails
+
+Gedit plugin to help with internationalizing Rails views.
+
+h3. Usage
+
+Highlight an untranslated string, and use the 'Tools -> I18n-ize' menu item 
+or Ctrl+Shift+I keyboard shortcut.
+
+* Takes the selected string, generates a i18n key.
+* Replaces the selection with [ = t('.<<key>>') ]
+* Copies the locale definition into your clipboard, to paste into your en.yml file.
+** key: Original String
+
+h3. Limitations
+
+* Written for use with haml templates
+* For localizing specific views (so each key is prepended with '.' in template)
+
+Might add configuration options in the future.
