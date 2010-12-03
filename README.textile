@@ -2,6 +2,10 @@ h1. Gedit plugin - I18n Helper for Rails
 
 h4. Menu and keyboard shortcut for internationalizing strings in Rails templates.
 
+h3. Installation
+
+* Clone the git repository, run "./install.sh"
+
 h3. Usage
 
 Highlight an untranslated string, and use the 'Tools -> I18n-ize' menu item 
